@@ -24,11 +24,13 @@ a:hover {
 
 body {
   margin: 0;
-
-
   min-width: 320px;
   min-height: 100vh;
   text-align: left;
+  background-image: url("./assets/b46.webp");
+  background-size: cover;      
+  background-position: center;   
+  background-repeat: no-repeat;  
 }
 
 p {
@@ -78,3 +80,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
