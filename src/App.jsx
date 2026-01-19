@@ -4,10 +4,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [album, showAlbums] = useState(true)
+  const [album, showAlbums] = useState(false)
+  const [about, showAbout] = useState(false)
 
   return (
     <>
+      <div>
+        <button onClick ={ () => showAbout(!about)}> {!about ? "About Me" : "Hide"} </button>
+        {about && (
+          <p>
+            I'm a coder and musician. You can see some of my projects here.
+          </p>
+          )}
+      </div>
       <button onClick = {() => showAlbums(!album)}>{album ? "Hide" : "View"} Discography</button>
       <div>
         {album && (
