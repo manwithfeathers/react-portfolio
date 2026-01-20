@@ -5,7 +5,7 @@ export default function About () {
 	return (
 
 		<div>
-        	<button onClick ={ () => showAbout(!about)}> {!about ? "About Me" : "Hide"} </button>
+        	<button className="toggleButton" onClick ={ () => showAbout(!about)}> {!about ? "About Me" : "Hide"} </button>
         	{about && (
           	<p>
             I'm a coder and musician. You can see some of my projects here.
